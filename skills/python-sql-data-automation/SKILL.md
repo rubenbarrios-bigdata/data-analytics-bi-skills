@@ -3,10 +3,10 @@ name: python-sql-data-automation
 description: "Desarrollo de software y pipelines de automatización de datos con Python estándar y SQLite3 transaccional. Arquitectura modular por capas, prevención de Inyección SQL, manipulación estructurada de colecciones, I/O de CSV/archivos y CLI robustos. Basado en la certificación oficial de Talento Tech (Ministerio de Educación CABA)."
 ---
 
-# Python & SQL Data Automation: Core Engineering & Modular Persistence
+# Python & SQL Data Automation: Programación Modular y Persistencia
 
 ## Propósito y Alcance Operativo
-Esta skill capacita al agente para construir soluciones de software, utilidades CLI de automatización y pipelines de persistencia relacional con **Python** y **SQLite3**, adhiriéndose a las mejores prácticas de la ingeniería de datos: modularidad por capas, transaccionalidad segura (`commit`/`rollback`), consultas parametrizadas obligatorias para neutralizar la Inyección SQL, gestión de colecciones complejas y manejo robusto de archivos planos (CSV y texto).
+Esta skill capacita al agente para construir soluciones de software, utilidades CLI de automatización y pipelines de persistencia relacional con **Python** y **SQLite3**, adhiriéndose a las mejores prácticas de desarrollo y datos: modularidad por capas, transaccionalidad segura (`commit`/`rollback`), consultas parametrizadas obligatorias para neutralizar la Inyección SQL, gestión de colecciones complejas y manejo robusto de archivos planos (CSV y texto).
 
 ---
 

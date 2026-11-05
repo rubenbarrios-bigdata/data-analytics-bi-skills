@@ -59,3 +59,4 @@ if __name__ == "__main__":
     else:
         print("\n[OK] Todos los archivos TMDL cumplen con la codificación requerida.")
     print("=" * 65)
+

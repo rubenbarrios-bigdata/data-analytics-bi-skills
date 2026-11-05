@@ -57,3 +57,4 @@ table Clientes
 	measure 'Total Clientes' = DISTINCTCOUNT(Clientes[ClienteID])
 		formatString: "#,##0"
 ```
+

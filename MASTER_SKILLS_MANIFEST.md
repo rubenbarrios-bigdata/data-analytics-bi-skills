@@ -1,8 +1,8 @@
 # MASTER SKILLS MANIFEST & BLUEPRINT
-## Ecosistema de Custom Agent Skills para Antigravity
+## Suite Oficial de Data Analytics & BI Skills
 
 **Propietario / Autor:** Rubén David Barrios Bello  
-**Perfil Profesional:** Data Analyst & BI Developer (Especialista en Analytics Engineering, Business Intelligence, DevOps para BI y Analítica Digital)  
+**Perfil Profesional:** Data Analyst & BI Developer (Analítica de Datos, Business Intelligence, DevOps para BI y Analítica Digital)  
 **Fecha de Emisión:** Noviembre 2026  
 **Repositorio Local:** `C:\Users\ismar\OneDrive\Documents\Repositorios\antigravity-data-bi-skills`  
 **Ubicación Global de Skills (Antigravity):** `C:\Users\ismar\.gemini\config\skills\`  

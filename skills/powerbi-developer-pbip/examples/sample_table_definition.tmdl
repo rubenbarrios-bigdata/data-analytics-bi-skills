@@ -34,3 +34,4 @@ table 'Ventas'
 		```
 		formatString: "0.0%"
 		displayFolder: "Ratios Financieros"
+

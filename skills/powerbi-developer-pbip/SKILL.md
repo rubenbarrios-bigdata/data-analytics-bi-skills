@@ -3,10 +3,10 @@ name: powerbi-developer-pbip
 description: "Desarrollo avanzado en Power BI PBIP: compilación manual de TMDL en UTF-8 sin BOM, arquitectura de canvas 1920x1080, diseño de componentes DAX con HTML/CSS/SVG y efecto 3D Dual Flip interactivo, y diagnóstico en vivo de Analysis Services (msmdsrv.exe). Basado en el proyecto empresarial real de Retail Analytics."
 ---
 
-# Power BI Developer: PBIP, TMDL Engineering & DAX UI Engine
+# Power BI Developer: Formato PBIP, Modelado TMDL y Motor Visual DAX
 
 ## Propósito y Alcance Operativo
-Esta skill capacita al agente para desarrollar soluciones de Business Intelligence de vanguardia bajo el formato **Power BI Project (`.pbip`)**. Abarca la manipulación manual y compilación rigurosa de **TMDL (Tabular Model Definition Language)** en **UTF-8 sin BOM**, diseño de layouts milimétricos en canvas panorámico **1920x1080**, la creación de un motor visual en **DAX** que genera tarjetas KPI interactivas con **HTML, CSS puro y SVG nativo (incluyendo efecto 3D Dual Flip animado)** para storytelling ejecutivo, y la inspección en vivo de la instancia local de Analysis Services (`msmdsrv.exe`).
+Esta skill capacita al agente para desarrollar soluciones de Business Intelligence de alto nivel bajo el formato **Power BI Project (`.pbip`)**. Abarca la manipulación manual y compilación rigurosa de **TMDL (Tabular Model Definition Language)** en **UTF-8 sin BOM**, diseño de layouts milimétricos en canvas panorámico **1920x1080**, la creación de un motor visual en **DAX** que genera tarjetas KPI interactivas con **HTML, CSS puro y SVG nativo (incluyendo efecto 3D Dual Flip animado)** para storytelling ejecutivo, y la inspección en vivo de la instancia local de Analysis Services (`msmdsrv.exe`).
 
 ---
 
@@ -111,3 +111,4 @@ Cuando Power BI Desktop está abierto con un proyecto `.pbip` o `.pbix`, inicia 
 3. ¿El canvas de la página está configurado en 1920x1080 con gutters uniformes de 20px?
 4. ¿Las tarjetas HTML/SVG tienen configurada la propiedad `backface-visibility: hidden` para un giro limpio de 180°?
 5. ¿Se verificó la compilación abriendo el PBIP en Power BI Desktop o validando la conexión al puerto de `msmdsrv.exe`?
+

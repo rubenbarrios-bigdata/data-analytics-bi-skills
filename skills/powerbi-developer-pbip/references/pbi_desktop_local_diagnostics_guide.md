@@ -55,3 +55,4 @@ Una vez conocido el puerto (ej. `localhost:54321`), se pueden consultar las vist
       "Margen Pct", [Margen Operativo Pct]
   )
   ```
+

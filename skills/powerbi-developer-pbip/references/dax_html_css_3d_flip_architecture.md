@@ -38,3 +38,4 @@ DAX puede construir cadenas SVG interpolando coordenadas matemáticas directamen
 - **Trazado de la Línea (`<polyline>` o `<path>`):** Las coordenadas `(x, y)` se calculan normalizando los meses al ancho ($X \in [0, 200]$) y los valores de venta al alto invertido ($Y \in [5, 45]$).
 - **Escape de Caracteres Hexadecimales:**
   - El símbolo `#` en códigos de color CSS (ej. `#1A73E8`) debe escribirse como `%231A73E8` si el SVG se inyecta mediante `data:image/svg+xml;utf8,...` o como texto plano directo en visuales HTML.
+

@@ -6,7 +6,7 @@ description: "DevOps aplicado a Business Intelligence, formato PBIP, Git Flow pa
 # Power BI DevOps & Microsoft Fabric Enterprise Lifecycle Management
 
 ## Propósito y Alcance Operativo
-Esta skill capacita al agente para implementar prácticas modernas de **DevOps para Business Intelligence y Analytics Engineering**, superando la era del archivo binario monolítico `.pbix`. Cubre la arquitectura del formato **Power BI Project (`.pbip`)**, control de versiones con Git (Git Flow adaptado a analítica), canalizaciones CI/CD automatizadas en **Azure DevOps** y **GitHub Actions**, autenticación desatendida mediante **Service Principals** en Microsoft Entra ID, integración nativa de Workspaces con Git en **Microsoft Fabric** y orquestación de **Deployment Pipelines** a través de entornos DEV, TEST y PROD.
+Esta skill capacita al agente para implementar prácticas modernas de **DevOps para Business Intelligence y Modelos Semánticos**, superando la era del archivo binario monolítico `.pbix`. Cubre la arquitectura del formato **Power BI Project (`.pbip`)**, control de versiones con Git (Git Flow adaptado a analítica), canalizaciones CI/CD automatizadas en **Azure DevOps** y **GitHub Actions**, autenticación desatendida mediante **Service Principals** en Microsoft Entra ID, integración nativa de Workspaces con Git en **Microsoft Fabric** y orquestación de **Deployment Pipelines** a través de entornos DEV, TEST y PROD.
 
 ---
 

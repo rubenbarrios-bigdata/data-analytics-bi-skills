@@ -6,7 +6,7 @@ description: "Modelado dimensional Kimball en dbt Core y Google BigQuery: estruc
 # dbt Data Modeling & BigQuery FinOps for Business Intelligence
 
 ## Propósito y Alcance Operativo
-Esta skill capacita al agente para diseñar, implementar y gobernar pipelines analíticos de transformación con **dbt Core** sobre **Google BigQuery**, orientados a servir modelos analíticos confiables a herramientas de BI (Power BI, Looker Studio). Se fundamenta en las prácticas reales de ingeniería aplicadas en proyectos de Retail Analytics: modelado dimensional de Kimball (Hechos y Dimensiones), arquitectura estricta de capas (`staging`, `intermediate`, `marts`), optimización de costos y rendimiento en BigQuery (particionado por fecha y clustering), aseguramiento continuo de calidad de datos (*generic & singular data tests*) y documentación de linaje.
+Esta skill capacita al agente para diseñar, implementar y gobernar pipelines analíticos de transformación con **dbt Core** sobre **Google BigQuery**, orientados a servir modelos analíticos confiables a herramientas de BI (Power BI, Looker Studio). Se fundamenta en las prácticas reales de modelado y transformación analítica aplicadas en proyectos de Retail Analytics: modelado dimensional de Kimball (Hechos y Dimensiones), arquitectura estricta de capas (`staging`, `intermediate`, `marts`), optimización de costos y rendimiento en BigQuery (particionado por fecha y clustering), aseguramiento continuo de calidad de datos (*generic & singular data tests*) y documentación de linaje.
 
 ---
 
