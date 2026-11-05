@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "datasetReference": {
+    "byPath": {
+      "path": "../RetailSales.SemanticModel"
+    },
+    "byConnection": null
+  }
+}
+

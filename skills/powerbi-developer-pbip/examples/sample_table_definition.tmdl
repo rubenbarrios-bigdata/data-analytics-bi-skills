@@ -1,0 +1,36 @@
+table 'Ventas'
+	lineageTag: e8d4f1a2-9b3c-4a5e-8f1d-2c3b4a5e6f7a
+
+	column 'ID Transacción'
+		dataType: string
+		sourceColumn: transaction_id
+		summarizeBy: none
+
+	column 'Fecha'
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		sourceColumn: transaction_date
+		summarizeBy: none
+
+	column 'Importe Neto'
+		dataType: double
+		formatString: "$ #,##0.00"
+		sourceColumn: net_sales_amount
+		summarizeBy: sum
+
+	measure 'Venta Total Neta' = ```
+		CALCULATE(
+			SUM('Ventas'[Importe Neto])
+		)
+		```
+		formatString: "$ #,##0.00"
+		displayFolder: "Métricas Base"
+
+	measure 'Margen Operativo Pct' = ```
+		VAR _Ventas = [Venta Total Neta]
+		VAR _Costos = SUM('Ventas'[Costo Total])
+		RETURN
+			DIVIDE(_Ventas - _Costos, _Ventas, 0)
+		```
+		formatString: "0.0%"
+		displayFolder: "Ratios Financieros"

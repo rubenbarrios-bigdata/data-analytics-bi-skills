@@ -1,0 +1,29 @@
+name: Fabric & Power BI CI/CD Workflow
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+  pull_request:
+    branches:
+      - main
+      - develop
+
+jobs:
+  validate-pbip:
+    name: Lint & Validate PBIP Architecture
+    runs-on: windows-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run PBIP Structural Integrity Check
+        run: |
+          python skills/powerbi-devops-fabric/scripts/validate_pbip_structure.py skills/powerbi-devops-fabric/examples/sample_pbip_project
+

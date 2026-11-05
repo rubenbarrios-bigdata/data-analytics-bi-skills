@@ -224,3 +224,4 @@ flowchart TD
   - Automatización y Diagnóstico en Vivo:
     - Conexión a la instancia local de Analysis Services de Power BI Desktop mediante puertos dinámicos (`msmdsrv.exe`).
     - Ejecución de queries DAX por consola mediante PowerShell / Python con ADOMD.NET / AMO.
+

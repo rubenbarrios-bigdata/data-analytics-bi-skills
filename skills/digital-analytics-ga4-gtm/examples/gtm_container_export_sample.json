@@ -1,0 +1,86 @@
+{
+  "exportFormatVersion": 2,
+  "exportTime": "2026-11-04 20:30:00",
+  "containerVersion": {
+    "path": "accounts/1001/containers/2001/versions/0",
+    "accountId": "1001",
+    "containerId": "2001",
+    "container": {
+      "name": "GA4 + GTM E-commerce & Consent Container",
+      "publicId": "GTM-ANALYTICSWAY",
+      "usageContext": ["WEB"]
+    },
+    "tag": [
+      {
+        "accountId": "1001",
+        "containerId": "2001",
+        "tagId": "1",
+        "name": "GA4 - Google Tag Configuration",
+        "type": "googtag",
+        "parameter": [
+          { "type": "BOOLEAN", "key": "send_page_view", "value": "true" },
+          { "type": "TEMPLATE", "key": "tag_id", "value": "G-XXXXXXXXXX" }
+        ],
+        "firingTriggerId": ["2147479553"]
+      },
+      {
+        "accountId": "1001",
+        "containerId": "2001",
+        "tagId": "2",
+        "name": "GA4 - Event - E-commerce Purchase",
+        "type": "gaawe",
+        "parameter": [
+          { "type": "TEMPLATE", "key": "eventName", "value": "purchase" },
+          { "type": "TEMPLATE", "key": "measurementId", "value": "G-XXXXXXXXXX" },
+          { "type": "BOOLEAN", "key": "sendEcommerceData", "value": "true" }
+        ],
+        "firingTriggerId": ["101"]
+      }
+    ],
+    "trigger": [
+      {
+        "accountId": "1001",
+        "containerId": "2001",
+        "triggerId": "101",
+        "name": "Custom Event - purchase",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              { "type": "TEMPLATE", "key": "arg0", "value": "{{_event}}" },
+              { "type": "TEMPLATE", "key": "arg1", "value": "purchase" }
+            ]
+          }
+        ]
+      }
+    ],
+    "variable": [
+      {
+        "accountId": "1001",
+        "containerId": "2001",
+        "variableId": "1",
+        "name": "dlv - ecommerce.currency",
+        "type": "v",
+        "parameter": [
+          { "type": "INTEGER", "key": "dataLayerVersion", "value": "2" },
+          { "type": "BOOLEAN", "key": "setDefaultValue", "value": "false" },
+          { "type": "TEMPLATE", "key": "name", "value": "ecommerce.currency" }
+        ]
+      },
+      {
+        "accountId": "1001",
+        "containerId": "2001",
+        "variableId": "2",
+        "name": "dlv - ecommerce.value",
+        "type": "v",
+        "parameter": [
+          { "type": "INTEGER", "key": "dataLayerVersion", "value": "2" },
+          { "type": "BOOLEAN", "key": "setDefaultValue", "value": "false" },
+          { "type": "TEMPLATE", "key": "name", "value": "ecommerce.value" }
+        ]
+      }
+    ]
+  }
+}
+

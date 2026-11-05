@@ -1,0 +1,9 @@
+model Model
+	compatibilityLevel: 1567
+	culture: es-ES
+	defaultPowerBIDataSourceVersion: powerBI_V3
+
+ref table Ventas
+ref table Clientes
+ref table Calendario
+

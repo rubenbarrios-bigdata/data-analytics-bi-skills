@@ -1,0 +1,57 @@
+# Azure DevOps CI/CD Pipeline para Power BI Projects (PBIP) y Microsoft Fabric
+# Autor: Rubén David Barrios Bello - Data Analyst & BI Developer
+# Ecosistema: Azure DevOps CI/CD & Microsoft Fabric ALM
+
+trigger:
+  branches:
+    include:
+      - main
+      - develop
+
+pr:
+  branches:
+    include:
+      - main
+      - develop
+
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  - group: vg-powerbi-fabric-credentials # Contiene TENANT_ID, CLIENT_ID, CLIENT_SECRET
+  - name: PBIP_ROOT_DIR
+    value: 'src/RetailAnalytics'
+
+stages:
+  - stage: CI_Validation
+    displayName: 'Integración Continua: Validación de PBIP y TMDL'
+    jobs:
+      - job: ValidatePBIP
+        displayName: 'Auditoría de Integridad Estructural y UTF-8'
+        steps:
+          - task: UsePythonVersion@0
+            inputs:
+              versionSpec: '3.11'
+              addToPath: true
+
+          - script: |
+              python skills/powerbi-devops-fabric/scripts/validate_pbip_structure.py $(PBIP_ROOT_DIR)
+            displayName: 'Ejecutar Validador PBIP'
+
+  - stage: CD_Deploy_DEV_TEST
+    displayName: 'Entrega Continua: Sincronización con Fabric'
+    dependsOn: CI_Validation
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/develop'))
+    jobs:
+      - job: DeployToFabricDEV
+        displayName: 'Despliegue Desatendido a Workspace DEV / TEST'
+        steps:
+          - script: |
+              echo "Autenticando Service Principal contra Microsoft Entra ID..."
+              python skills/powerbi-devops-fabric/scripts/fabric_rest_deployer.py
+            displayName: 'Disparar Sincronización y Refresco de Modelo'
+            env:
+              AZURE_TENANT_ID: $(TENANT_ID)
+              AZURE_CLIENT_ID: $(CLIENT_ID)
+              AZURE_CLIENT_SECRET: $(CLIENT_SECRET)
+
