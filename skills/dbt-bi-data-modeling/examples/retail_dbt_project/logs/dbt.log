@@ -2,3 +2,53 @@
 00:45:18.354717 [info ]: 
 ==================== Execution Summary =====================
 Finished 'internal' successfully [1.0s]
+==================== 2026-11-18T04:50:20.474766Z | 01a1ecfd-d496-7a80-acb6-e82eff6fd871 ====================
+04:50:21.956503 [info ]: 
+==================== Execution Summary =====================
+Finished 'internal' successfully [1.5s]
+==================== 2026-11-18T20:29:29.628084Z | 01a1f059-83a4-7390-b8fb-efdeb58b6a66 ====================
+20:29:31.588547 [info ]: 
+==================== Execution Summary =====================
+Finished 'internal' successfully [2.0s]
+==================== 2026-11-27T01:51:23.351239Z | 01a21ab3-3978-76d2-88a2-ba5312f8171e ====================
+{"data":{"log_version":3,"version":"=2.0.12"},"info":{"category":"","code":"A001","extra":{},"invocation_id":"01a21ab3-3f67-77e0-802b-831cb4b92519","level":"info","msg":"Running with dbt=2.0.12","name":"MainReportVersion","pid":29620,"thread":"tokio-rt-worker","ts":"2026-11-27T01:51:24.568881Z"}}
+{"data":{"args":{"debug":"false","invocation_command":"C:\\Users\\ismar\\.local\\bin\\dbt.exe debug --log-format json","log_format":"json","quiet":"false","write_json":"true"}},"info":{"category":"","code":"A002","extra":{},"invocation_id":"01a21ab3-3f67-77e0-802b-831cb4b92519","level":"debug","msg":"running dbt with arguments {\"command\":\"debug\",\"vars\":\"{}\",\"limit\":\"10\",\"debug\":false,\"log_format\":\"json\",\"quiet\":false,\"write_json\":true,\"write_catalog\":false,\"manage_state\":false}","name":"MainReportArgs","pid":29620,"thread":"tokio-rt-worker","ts":"2026-11-27T01:51:24.568904Z"}}
+{"data":{"msg":"dbt 2.0.12"},"info":{"category":"","code":"","extra":{},"invocation_id":"01a21ab3-3f67-77e0-802b-831cb4b92519","level":"info","msg":"dbt 2.0.12","name":"Generic","pid":29620,"thread":"tokio-rt-worker","ts":"2026-11-27T01:51:24.570010Z"}}
+{"data":{"msg":"Loading ~/.dbt/profiles.yml"},"info":{"category":"","code":"","extra":{},"invocation_id":"01a21ab3-3f67-77e0-802b-831cb4b92519","level":"info","msg":"Loading ~/.dbt/profiles.yml","name":"Generic","pid":29620,"thread":"tokio-rt-worker","ts":"2026-11-27T01:51:24.702400Z"}}
+{"data":{},"info":{"category":"","code":"1001","extra":{},"invocation_id":"01a21ab3-3f67-77e0-802b-831cb4b92519","level":"error","msg":"[error] [IoError (dbt1001)]: Profile 'bigquery_profile' not found in profiles.yml\n  --> dbt_project.yml:5:10","name":"IoError","pid":29620,"thread":"tokio-rt-worker","ts":"2026-11-27T01:51:24.746241Z"}}
+01:51:25.308785 [info ]: 
+==================== Execution Summary =====================
+Finished 'internal' successfully [2.0s]
+{"data":{"completed_at":"2026-11-27T01:51:25.529077Z","elapsed":0.978084921836853,"success":false},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"01a21ab3-3f67-77e0-802b-831cb4b92519","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'debug' with 1 error [978ms]","name":"CommandCompleted","pid":29620,"thread":"tokio-rt-worker","ts":"2026-11-27T01:51:25.530133Z"}}
+==================== 2026-11-27T01:51:25.647393Z | 01a21ab3-43c8-7631-9a6e-7247e907d914 ====================
+01:51:25.648601 [info ]: dbt 2.0.12
+01:51:26.427491 [info ]: 
+==================== Execution Summary =====================
+Finished 'deps' successfully [780ms]
+{"data":{"log_version":3,"version":"=2.0.12"},"info":{"category":"","code":"A001","extra":{},"invocation_id":"01a21ab3-48e1-7751-b0b9-0d800c6887ea","level":"info","msg":"Running with dbt=2.0.12","name":"MainReportVersion","pid":20388,"thread":"tokio-rt-worker","ts":"2026-11-27T01:51:26.948553Z"}}
+{"data":{"args":{"debug":"false","invocation_command":"C:\\Users\\ismar\\.local\\bin\\dbt.exe parse --log-format json","log_format":"json","quiet":"false","write_json":"true"}},"info":{"category":"","code":"A002","extra":{},"invocation_id":"01a21ab3-48e1-7751-b0b9-0d800c6887ea","level":"debug","msg":"running dbt with arguments {\"command\":\"parse\",\"vars\":\"{}\",\"limit\":\"10\",\"debug\":false,\"log_format\":\"json\",\"quiet\":false,\"write_json\":true,\"write_catalog\":false,\"manage_state\":false}","name":"MainReportArgs","pid":20388,"thread":"tokio-rt-worker","ts":"2026-11-27T01:51:26.948574Z"}}
+{"data":{"msg":"dbt 2.0.12"},"info":{"category":"","code":"","extra":{},"invocation_id":"01a21ab3-48e1-7751-b0b9-0d800c6887ea","level":"info","msg":"dbt 2.0.12","name":"Generic","pid":20388,"thread":"tokio-rt-worker","ts":"2026-11-27T01:51:26.948911Z"}}
+{"data":{"msg":"Loading ~/.dbt/profiles.yml"},"info":{"category":"","code":"","extra":{},"invocation_id":"01a21ab3-48e1-7751-b0b9-0d800c6887ea","level":"info","msg":"Loading ~/.dbt/profiles.yml","name":"Generic","pid":20388,"thread":"tokio-rt-worker","ts":"2026-11-27T01:51:26.961811Z"}}
+{"data":{},"info":{"category":"","code":"1001","extra":{},"invocation_id":"01a21ab3-48e1-7751-b0b9-0d800c6887ea","level":"error","msg":"[error] [IoError (dbt1001)]: Profile 'bigquery_profile' not found in profiles.yml\n  --> dbt_project.yml:5:10","name":"IoError","pid":20388,"thread":"tokio-rt-worker","ts":"2026-11-27T01:51:26.962908Z"}}
+{"data":{"completed_at":"2026-11-27T01:51:27.835615Z","elapsed":0.8871871829032898,"success":false},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"01a21ab3-48e1-7751-b0b9-0d800c6887ea","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'parse' with 1 error [887ms]","name":"CommandCompleted","pid":20388,"thread":"tokio-rt-worker","ts":"2026-11-27T01:51:27.835733Z"}}
+{"data":{"log_version":3,"version":"=2.0.12"},"info":{"category":"","code":"A001","extra":{},"invocation_id":"01a21ad0-4e44-7d43-ae20-51935e8279d7","level":"info","msg":"Running with dbt=2.0.12","name":"MainReportVersion","pid":14628,"thread":"tokio-rt-worker","ts":"2026-11-27T02:23:08.942993Z"}}
+{"data":{"args":{"debug":"false","invocation_command":"C:\\Users\\ismar\\.local\\bin\\dbt.exe debug --log-format json","log_format":"json","quiet":"false","write_json":"true"}},"info":{"category":"","code":"A002","extra":{},"invocation_id":"01a21ad0-4e44-7d43-ae20-51935e8279d7","level":"debug","msg":"running dbt with arguments {\"command\":\"debug\",\"vars\":\"{}\",\"limit\":\"10\",\"debug\":false,\"log_format\":\"json\",\"quiet\":false,\"write_json\":true,\"write_catalog\":false,\"manage_state\":false}","name":"MainReportArgs","pid":14628,"thread":"tokio-rt-worker","ts":"2026-11-27T02:23:08.946123Z"}}
+{"data":{"msg":"dbt 2.0.12"},"info":{"category":"","code":"","extra":{},"invocation_id":"01a21ad0-4e44-7d43-ae20-51935e8279d7","level":"info","msg":"dbt 2.0.12","name":"Generic","pid":14628,"thread":"tokio-rt-worker","ts":"2026-11-27T02:23:08.954036Z"}}
+{"data":{"msg":"Loading ~/.dbt/profiles.yml"},"info":{"category":"","code":"","extra":{},"invocation_id":"01a21ad0-4e44-7d43-ae20-51935e8279d7","level":"info","msg":"Loading ~/.dbt/profiles.yml","name":"Generic","pid":14628,"thread":"tokio-rt-worker","ts":"2026-11-27T02:23:09.015529Z"}}
+{"data":{},"info":{"category":"","code":"1001","extra":{},"invocation_id":"01a21ad0-4e44-7d43-ae20-51935e8279d7","level":"error","msg":"[error] [IoError (dbt1001)]: Profile 'bigquery_profile' not found in profiles.yml\n  --> dbt_project.yml:5:10","name":"IoError","pid":14628,"thread":"tokio-rt-worker","ts":"2026-11-27T02:23:09.037513Z"}}
+==================== 2026-11-27T02:23:09.708513Z | 01a21ad0-5189-7fa0-8a4d-7a8bfbcaa281 ====================
+{"data":{"completed_at":"2026-11-27T02:23:09.844950Z","elapsed":0.9084389805793762,"success":false},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"01a21ad0-4e44-7d43-ae20-51935e8279d7","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'debug' with 1 error [908ms]","name":"CommandCompleted","pid":14628,"thread":"tokio-rt-worker","ts":"2026-11-27T02:23:09.846195Z"}}
+==================== 2026-11-27T02:23:09.986147Z | 01a21ad0-529f-7103-b136-87c06fc29de3 ====================
+02:23:09.986574 [info ]: dbt 2.0.12
+02:23:10.370857 [info ]: 
+==================== Execution Summary =====================
+Finished 'internal' successfully [662ms]
+02:23:10.739373 [info ]: 
+==================== Execution Summary =====================
+Finished 'deps' successfully [753ms]
+{"data":{"log_version":3,"version":"=2.0.12"},"info":{"category":"","code":"A001","extra":{},"invocation_id":"01a21ad0-55f4-7f13-ae57-a47e3e2a5d5f","level":"info","msg":"Running with dbt=2.0.12","name":"MainReportVersion","pid":32780,"thread":"tokio-rt-worker","ts":"2026-11-27T02:23:10.840455Z"}}
+{"data":{"args":{"debug":"false","invocation_command":"C:\\Users\\ismar\\.local\\bin\\dbt.exe parse --log-format json","log_format":"json","quiet":"false","write_json":"true"}},"info":{"category":"","code":"A002","extra":{},"invocation_id":"01a21ad0-55f4-7f13-ae57-a47e3e2a5d5f","level":"debug","msg":"running dbt with arguments {\"command\":\"parse\",\"vars\":\"{}\",\"limit\":\"10\",\"debug\":false,\"log_format\":\"json\",\"quiet\":false,\"write_json\":true,\"write_catalog\":false,\"manage_state\":false}","name":"MainReportArgs","pid":32780,"thread":"tokio-rt-worker","ts":"2026-11-27T02:23:10.840571Z"}}
+{"data":{"msg":"dbt 2.0.12"},"info":{"category":"","code":"","extra":{},"invocation_id":"01a21ad0-55f4-7f13-ae57-a47e3e2a5d5f","level":"info","msg":"dbt 2.0.12","name":"Generic","pid":32780,"thread":"tokio-rt-worker","ts":"2026-11-27T02:23:10.840925Z"}}
+{"data":{"msg":"Loading ~/.dbt/profiles.yml"},"info":{"category":"","code":"","extra":{},"invocation_id":"01a21ad0-55f4-7f13-ae57-a47e3e2a5d5f","level":"info","msg":"Loading ~/.dbt/profiles.yml","name":"Generic","pid":32780,"thread":"tokio-rt-worker","ts":"2026-11-27T02:23:10.848209Z"}}
+{"data":{},"info":{"category":"","code":"1001","extra":{},"invocation_id":"01a21ad0-55f4-7f13-ae57-a47e3e2a5d5f","level":"error","msg":"[error] [IoError (dbt1001)]: Profile 'bigquery_profile' not found in profiles.yml\n  --> dbt_project.yml:5:10","name":"IoError","pid":32780,"thread":"tokio-rt-worker","ts":"2026-11-27T02:23:10.849542Z"}}
+{"data":{"completed_at":"2026-11-27T02:23:11.456907Z","elapsed":0.6166223883628845,"success":false},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"01a21ad0-55f4-7f13-ae57-a47e3e2a5d5f","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'parse' with 1 error [616ms]","name":"CommandCompleted","pid":32780,"thread":"tokio-rt-worker","ts":"2026-11-27T02:23:11.457009Z"}}

@@ -57,8 +57,28 @@ Este repositorio centraliza las habilidades técnicas, árboles de decisión ope
 
 ---
 
+## ☁️ Stack Oficial de Google Cloud & Agent Development Kit (ADK)
+
+Este repositorio integra y respalda también el stack oficial de **Google Cloud Skills & Plugins para Antigravity**:
+
+1. **Catálogo Oficial de Google Cloud (`google/skills`)**:
+   - **Skills Core activas en `skills/`**: BigQuery (`bigquery-basics`, `bigquery-udfs`, `bigquery-migration-*`, `datalineage-*`, `dbt-sf-to-bq-translator`), Cloud Run (`cloud-run-basics`, `cloud-run-alert-configuration`), Bases de Datos (`cloud-sql-basics`, `alloydb-basics`, `spanner-basics`, `bigtable-basics`, `firebase-basics`), GKE (`gke-basics`), CI/CD & Terraform (`cloud-build-basics`, `google-cicd-deploy`, `google-cicd-pipeline-design`, `google-cicd-terraform`), IAM (`iam-helper-*`), Cloud Composer (`managed-airflow-*`), Gemini API (`gemini-api`), Google Analytics 4 APIs (`google-analytics-admin-api-basics`, `google-analytics-data-api-basics`) y los 6 pilares del **Google Cloud Well-Architected Framework** (`google-cloud-waf-*`).
+   - **Catálogo Completo (196 skills de GCP)**: Respaldado íntegramente en `google-cloud-catalog/cloud/` para consulta local o carga bajo demanda con `finding-google-skills`.
+2. **Google Cloud Developer + MCP de Documentación en Vivo**:
+   - Validación estricta de sintaxis `gcloud`, autenticación IAM / Application Default Credentials (ADC), descubrimiento bajo demanda (`finding-google-skills`) y conexión en tiempo real con **Google Developer Knowledge MCP**.
+3. **Data Agent Kit (35 Skills de Ingeniería de Datos en GCP)**:
+   - Suite activa para BigQuery, Dataform, dbt, Dataproc / Managed Spark, Dataflow, Cloud Storage, Dataplex Knowledge Catalog y prevención de pérdida de datos (`accidental-data-loss-prevention`).
+4. **Google Agents CLI (`google/agents-cli` — ADK & Cloud Run)**:
+   - Las 7 skills oficiales del ciclo de vida de agentes en producción (`google-agents-cli-workflow`, `google-agents-cli-scaffold`, `google-agents-cli-adk-code`, `google-agents-cli-eval`, `google-agents-cli-deploy`, `google-agents-cli-publish`, `google-agents-cli-observability`) más `google-agents-cli-onboarding`.
+5. **Regla Mandatoria de Seguridad GCP (`--dry-run` primero)**:
+   - Definida en [`AGENTS.md`](./AGENTS.md) y [`.agents/rules/gcp-safe-dry-run.md`](./.agents/rules/gcp-safe-dry-run.md) (además de la configuración global `~/.gemini/config/AGENTS.md`), exigiendo validación de flags, ejecución previa con `--dry-run` / `--validate-only`, estimación de escaneo en BigQuery y bloqueo de operaciones destructivas (`DROP TABLE`, `TRUNCATE`, `delete`) sin confirmación humana.
+
+---
+
 ## 📂 Organización del Repositorio
 
 - `docs/`: Certificaciones oficiales, programas de estudio y evidencia de formación.
 - `MASTER_SKILLS_MANIFEST.md`: Manifiesto técnico detallado y trazabilidad curricular.
-- `skills/`: Código fuente de cada habilidad con directrices (`SKILL.md`), guías técnicas (`references/`), scripts ejecutables (`scripts/`) y plantillas (`examples/`).
+- `AGENTS.md` y `.agents/rules/gcp-safe-dry-run.md`: Reglas mandatorias de seguridad en Google Cloud (`--dry-run` y FinOps).
+- `skills/`: Habilidades activas (tus 8 skills de Data & BI + las skills core de Google Cloud, GA4 API y Google Agents CLI ADK), sincronizadas con `C:\Users\ismar\.gemini\config\skills\`.
+- `google-cloud-catalog/`: Respaldo completo de las 196 skills oficiales de `google/skills/tree/main/skills/cloud` y `google/agents-cli`.
