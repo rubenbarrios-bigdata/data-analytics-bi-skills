@@ -80,5 +80,9 @@ Este repositorio integra y respalda también el stack oficial de **Google Cloud 
 - `docs/`: Certificaciones oficiales, programas de estudio y evidencia de formación.
 - `MASTER_SKILLS_MANIFEST.md`: Manifiesto técnico detallado y trazabilidad curricular.
 - `AGENTS.md` y `.agents/rules/gcp-safe-dry-run.md`: Reglas mandatorias de seguridad en Google Cloud (`--dry-run` y FinOps).
-- `skills/`: Habilidades activas (tus 8 skills de Data & BI + las skills core de Google Cloud, GA4 API y Google Agents CLI ADK), sincronizadas con `C:\Users\ismar\.gemini\config\skills\`.
-- `google-cloud-catalog/`: Respaldo completo de las 196 skills oficiales de `google/skills/tree/main/skills/cloud` y `google/agents-cli`.
+- `skills/`: Habilidades VIP de carga inmediata (las **8 skills certificadas de Data & BI** + las **8 skills de Google Agents CLI ADK** + las **2 skills de GA4 API** + las **14 skills principales de Google Cloud**), sincronizadas 1 a 1 con `C:\Users\ismar\.gemini\config\skills\` y calibradas para que ninguna quede fuera del presupuesto de contexto (junto con las 36 del plugin `Data Agent Kit` y las 5 de `Google Cloud Developer`).
+- `google-cloud-catalog/`: Respaldo completo de las **250 skills oficiales de Google**:
+  - `google-cloud-catalog/cloud/`: Las **196 skills** completas de `google/skills/tree/main/skills/cloud`.
+  - `google-cloud-catalog/data-agent-kit/`: Las **45 skills** completas del `Data Agent Kit` y Data Apps (`GoogleCloudPlatform/data-agent-kit-plugin`).
+  - `google-cloud-catalog/agents-cli/`: Las **7 skills** completas de `google/agents-cli` (ADK).
+  - `google-cloud-catalog/analytics/`: Las **2 skills** oficiales de Google Analytics 4 API.
