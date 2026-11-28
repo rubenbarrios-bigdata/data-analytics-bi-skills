@@ -55,6 +55,13 @@ Este repositorio centraliza las habilidades técnicas, árboles de decisión ope
    - Motor visual DAX con HTML, CSS puro y SVG nativo para tarjetas KPI con efecto **3D Dual Flip** interactivo (frente visual con sparkline y reverso con diagnóstico narrativo).
    - Diagnóstico y testing en vivo conectando al motor local de Analysis Services (`msmdsrv.exe`).
 
+9. **`expert-data-analytics-visualization-ai`** (Certificación DataBoosters Academy - 47 horas, 387 clases, 62 secciones):
+   - Dominio del ciclo ETL completo (funciones de texto, fecha, búsqueda y lógica) y las **7 herramientas más demandadas**: **Excel, SQL/MySQL, Python, R, Looker Studio, Power BI y Tableau**.
+   - Consultas **SQL** avanzadas (`JOINs`, subconsultas, `GROUP BY`, `HAVING`) y optimización de rendimiento con índices y caché.
+   - Programación en **Python** con **POO** y manejo de archivos asistida por **Claude AI** para generación y depuración de código.
+   - Análisis estadístico y exploratorio en **Lenguaje R** (vectores, dataframes, familia `apply`, histogramas y boxplots).
+   - Dashboards en **Tableau** (mapas, barras, líneas), **Looker Studio** (*Data Blending* y KPIs de marketing), **Excel + IA** y **Power BI + Microsoft Copilot** para generación de medidas DAX e insights en lenguaje natural.
+
 ---
 
 ## ☁️ Stack Oficial de Google Cloud & Agent Development Kit (ADK)
@@ -80,7 +87,7 @@ Este repositorio integra y respalda también el stack oficial de **Google Cloud 
 - `docs/`: Certificaciones oficiales, programas de estudio y evidencia de formación.
 - `MASTER_SKILLS_MANIFEST.md`: Manifiesto técnico detallado y trazabilidad curricular.
 - `AGENTS.md` y `.agents/rules/gcp-safe-dry-run.md`: Reglas mandatorias de seguridad en Google Cloud (`--dry-run` y FinOps).
-- `skills/`: Habilidades VIP de carga inmediata (las **8 skills certificadas de Data & BI** + las **8 skills de Google Agents CLI ADK** + las **2 skills de GA4 API** + las **14 skills principales de Google Cloud**), sincronizadas 1 a 1 con `C:\Users\ismar\.gemini\config\skills\` y calibradas para que ninguna quede fuera del presupuesto de contexto (junto con las 36 del plugin `Data Agent Kit` y las 5 de `Google Cloud Developer`).
+- `skills/`: Habilidades VIP de carga inmediata (las **9 skills certificadas de Data & BI** + las **8 skills de Google Agents CLI ADK** + las **2 skills de GA4 API** + las **14 skills principales de Google Cloud**), sincronizadas 1 a 1 con `C:\Users\ismar\.gemini\config\skills\` y calibradas para que ninguna quede fuera del presupuesto de contexto (junto con las 36 del plugin `Data Agent Kit` y las 5 de `Google Cloud Developer`).
 - `google-cloud-catalog/`: Respaldo completo de las **250 skills oficiales de Google**:
   - `google-cloud-catalog/cloud/`: Las **196 skills** completas de `google/skills/tree/main/skills/cloud`.
   - `google-cloud-catalog/data-agent-kit/`: Las **45 skills** completas del `Data Agent Kit` y Data Apps (`GoogleCloudPlatform/data-agent-kit-plugin`).

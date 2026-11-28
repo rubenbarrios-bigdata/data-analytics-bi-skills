@@ -27,7 +27,7 @@ Al abrir una nueva ventana o sesión en este repositorio, el agente **DEBE SEGUI
 
 ---
 
-## 2. INVENTARIO COMPLETO DE LAS 8 SKILLS A CONSTRUIR
+## 2. INVENTARIO COMPLETO DE LAS 9 SKILLS CONSTRUIDAS
 
 ```mermaid
 flowchart TD
@@ -43,6 +43,7 @@ flowchart TD
     subgraph ANALYTICS_ML["3. Análisis, EDA y Machine Learning"]
         S4["4. python-data-analytics-eda<br/>(Talento Tech C3)"]
         S5["5. machine-learning-business-analytics<br/>(Talento Tech C4)"]
+        S9["9. expert-data-analytics-visualization-ai<br/>(DataBoosters Academy - 7 Tools + AI)"]
     end
 
     subgraph BI_STORYTELLING["4. Business Intelligence y Visualización"]
@@ -59,6 +60,8 @@ flowchart TD
     S7 --> S8
     S8 --> S6
     S3 -.-> S8
+    S9 -.-> S4
+    S9 -.-> S8
 ```
 
 ---
@@ -126,7 +129,7 @@ flowchart TD
 ---
 
 ### SKILL 3: `bi-consulting-looker-studio`
-* **Fuente Oficial:** Talento Tech – Plan de Estudios 2026 (20 semanas / 16 clases). Documento: `docs/Talento_Tech_Consulting_BI.pdf`.
+* **Fuente Oficial:** Talento Tech – Ministerio de Educación de la Ciudad de Buenos Aires. 80 horas reloj. Noviembre 2026. Plan de Estudios 2026 (20 semanas / 16 clases). Documentos: `docs/Talento_Tech_Consulting_BI.pdf`, `docs/Business_Intelligence_Certificación.pdf` y `docs/Certificado_Business_Intelligence_TalentoTech.png`.
 * **Contenido Temático (Cuatrimestre 2):**
   - Introducción al Business Intelligence y rol del consultor de datos. Alineación de objetivos de negocio con métricas clave.
   - Ética y Seguridad de Datos: Privacidad, anonimización, cumplimiento normativo y gobernanza.
@@ -224,4 +227,19 @@ flowchart TD
   - Automatización y Diagnóstico en Vivo:
     - Conexión a la instancia local de Analysis Services de Power BI Desktop mediante puertos dinámicos (`msmdsrv.exe`).
     - Ejecución de queries DAX por consola mediante PowerShell / Python con ADOMD.NET / AMO.
+
+---
+
+### SKILL 9: `expert-data-analytics-visualization-ai`
+* **Fuente Oficial:** Certificación Udemy – DataBoosters Academy (Instructores: Jorge Alberto Chávez Sarmiento, Juan Carlos Hernández Ramírez, Luis Alberto Reyes, Flavio César Sandoval Muñoz). Emitido: 13 de Noviembre de 2026. Duración: 47 horas totales (387 clases, 62 secciones). Certificado ID: `UC-9072cb6c-85db-4e8e-9505-6c9b5fe78d17`. Documento: `docs/Experto_En_Análisis_Y_Visualización_De_Datos.pdf`.
+* **Contenido Temático (Las 7 Herramientas Líderes + Inteligencia Artificial Aplicada):**
+  - **Proceso ETL Completo Pre-Visualización:** Limpieza y transformación de datos con funciones de texto, fecha, búsqueda y lógica condicional antes de su modelado visual.
+  - **Excel Analítico Avanzado + IA:** Creación de dashboards con Tablas Dinámicas, KPIs, gráficos interactivos y uso de la herramienta *Analizar datos con IA integrada*.
+  - **SQL / MySQL y Optimización de Rendimiento:** Consultas desde cero hasta avanzadas (`SELECT`, `JOINs`, subconsultas, `GROUP BY`, `HAVING`) y optimización de rendimiento mediante índices (`CREATE INDEX`), predicados *SARGable* y caché.
+  - **Python (POO) + Asistencia con Claude AI:** Tipos de datos, estructuras, Programación Orientada a Objetos (POO), manejo de archivos (`File I/O`) y uso práctico de **Claude (IA)** para escribir, depurar y optimizar código Python aplicado al análisis de datos.
+  - **Lenguaje R para Análisis Estadístico y Exploratorio:** Vectores, dataframes, programación funcional con la familia `apply` (`apply`, `lapply`, `sapply`, `tapply`), gráficos personalizados, histogramas, boxplots y EDA.
+  - **Looker Studio (Data Studio):** Diseño de reportes con campos calculados, KPIs de marketing, combinación de fuentes (*Data Blending*), storytelling visual y publicación web.
+  - **Power BI + Microsoft Copilot (IA):** Power Query, transformaciones, DAX, visualizaciones avanzadas, mapas geográficos, líneas de tendencia analíticas y uso de **Microsoft Copilot en Power BI** para crear reportes, generar medidas DAX y extraer insights con lenguaje natural.
+  - **Tableau Public / Desktop:** Importación de datos, transformación de columnas, aplicación de filtros e interactividad, y construcción de dashboards con gráficos de barras, líneas y mapas interactivos.
+
 
